@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import pyramid3 from '../../assets/pyramid3.jpg';
 import './Message.css';
+import lifecross from '../../assets/lifecross.png';
+import { Link } from 'react-router-dom';
 
 class Message extends Component {
     constructor(props) {
@@ -46,6 +48,7 @@ class Message extends Component {
         return (
             <div className='message'>
                 <img className='bg-image' src={pyramid3} alt='' />
+                <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
                 <h1>PRAYERS</h1>
                 <form className='form' onSubmit={this.submitTextarea}>
                     <div className="form-group">
