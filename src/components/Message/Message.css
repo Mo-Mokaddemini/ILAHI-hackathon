@@ -1,4 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+.message h1 {
+    font-family: 'Poiret One';
+}
 .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;;
     color: var(--primary-color);
+}
+.message .form{
+    position: absolute;
+}
+.message h1{
+    position: absolute;
+    margin-bottom: 500px;
+}
+.message .form-group {
+    display: flex;
+    flex-direction: column;
+}
+.message .form-group label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.message .form-group .form-control {
+    width: 400px;
+    border-radius: 5px;
+}
+.message .btn {
+    margin-top: 20px;
+}
+.message .bg-image {
+    z-index: -1;
+    width: 100vW;
+    height: 100vh;
 }
