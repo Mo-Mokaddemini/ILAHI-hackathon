@@ -50,6 +50,7 @@ class Message extends Component {
           <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
             <div className='message'>
                 <img className='bg-image' src={pyramid3} alt='' />
+                <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
                 <h1>PRAYERS</h1>
                 <form className='form' onSubmit={this.submitTextarea}>
                     <div className="form-group">
