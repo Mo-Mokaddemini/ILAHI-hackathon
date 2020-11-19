@@ -47,7 +47,7 @@
 .backgroundimg{
     z-index: -1;
     width: 100vW;
-    height: 100vh;
+    height: auto;
 }
 
 @media screen and (max-width: 1024px) {

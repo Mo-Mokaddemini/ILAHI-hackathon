@@ -11,7 +11,7 @@ class FunctionCard extends Component {
         <div className="bg-image"> </div>
         <div className = 'fonctionality'>
           
-          <Link className = 'devinity' to="/devinity">Devinity!</Link>
+          <Link className = 'devinity' to="/devinity">Devinity</Link>
           <Link className = 'prayer' to="/prayer"> prayer </Link>
         
         </div>
