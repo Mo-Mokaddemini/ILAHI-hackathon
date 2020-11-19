@@ -12,7 +12,7 @@ function Homepage() {
         <div className="homepageContainer">
           <h1 className="title">ILAHI</h1>
           <Link className="buttonjoin" to="/FunctionCard"> 
-           Join Us
+           Discover your Gods
           </Link>
         </div>
       </div>
