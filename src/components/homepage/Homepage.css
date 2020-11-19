@@ -22,7 +22,7 @@
     position: absolute;
     font-size: 250px;
     padding: 200px;
-    top: -10%;
+    top: 0%;
     font-family: 'Poiret One';
     color: #2875e7;
     text-shadow: #ffee00fd 1px 1px  10px;
@@ -47,7 +47,7 @@
 .backgroundimg{
     z-index: -1;
     width: 100vW;
-    height: auto;
+    height: 100vh;
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import pyramid3 from '../../assets/pyramid3.jpg';
 import './Message.css';
+import lifecross from '../../assets/lifecross.png';
+import { Link } from 'react-router-dom';
 
 class Message extends Component {
     constructor(props) {
@@ -42,8 +44,10 @@ class Message extends Component {
       };
     
 
-    render() {
-        return (
+  render() {
+      return (
+        <div className="mescontainer">
+          <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
             <div className='message'>
                 <img className='bg-image' src={pyramid3} alt='' />
                 <h1>PRAYERS</h1>
@@ -75,6 +79,7 @@ class Message extends Component {
                     </div>
                 </form>
             </div>
+          </div>
         )
     }
 }
