@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+html, body {
+    height : 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+.container-card {
+    display: flex;
+    border: 1px solid black;
+    font-family: 'Poiret One', cursive;
+    background-image: url("https://zupimages.net/up/20/47/svg6.jpg");
+    font-weight: bolder;
+}
+
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 600px;
+    color: #2875E7;
+    text-shadow: #ffee00fd 2px 2px  10px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.lign {
+    width: 20%;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.citation q{
+    font-style: italic;   
+}
+
+.placeOfWorship span {
+    font-weight: bold;
+}
+
+.placeOfWorship p {
+    margin-bottom: 0;
+}
+
+.gift span {
+    font-weight: bold;  
+}
+
+.imageGod img {
+    height: 100vh;
+    border-right: 1px solid #FFD700;
+}
+
+@media screen and (max-width: 768px) {
+    .container-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-content {
+        color: black;
+        text-shadow: whitesmoke 3px 3px  10px;
+    }
+    
+    .imageGod img {
+        height: 53vh;
+        border: 2px solid #FFD700;
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+
+    h1 {
+        margin-top: 10px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .container-content {
+        width: 330px;
+    }
+
+    .imageGod img {
+        height: 32vh;
+        border: 2px solid #FFD700;
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+}
