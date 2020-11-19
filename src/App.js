@@ -1,33 +1,18 @@
-
 import React from "react";
 import "./App.css";
-import FunctionCard from "./components/Functionality/FunctionCard";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Devinity from "./components/Functionality/Devinity";
-import Message from "./components/Functionality/Message";
+import FunctionCard from "./components/Functionality/FunctionCard";
 import Homepage from "./components/homepage/Homepage";
-
+import Message from "./components/Message/Message";
 function App() {
   return (
-    <div>
-      <div className="App">
-        <Switch>
-
-        <Route path="/">
-            
-            <Homepage />
-          </Route>
-          <Route exact path="/" component={FunctionCard} />
-
-          <Route path="/devinity" component={Devinity} />
-
-          <Route path="/prayer" component={Message} />
-
-        
-        </Switch>
-      </div>
+    <div className="App">
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/FunctionCard" component = {FunctionCard}/>
+        <Route path="/prayer" component={Message} />
+      </Switch>
     </div>
   );
 }
-
 export default App;
