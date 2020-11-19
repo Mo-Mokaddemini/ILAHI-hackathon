@@ -44,8 +44,10 @@ class Message extends Component {
       };
     
 
-    render() {
-        return (
+  render() {
+      return (
+        <div className="mescontainer">
+          <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
             <div className='message'>
                 <img className='bg-image' src={pyramid3} alt='' />
                 <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
@@ -78,6 +80,7 @@ class Message extends Component {
                     </div>
                 </form>
             </div>
+          </div>
         )
     }
 }

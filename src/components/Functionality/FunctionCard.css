@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
+
+.functioncardcontainer{
   height: 100%;
-
-
 }
-
-.bg-image {
+.lifecross{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+.lifecross:hover{
+  transform: scale(1.2);
+  transition: 0.4s all;
+}
+.bg-image-2 {
   background-image: url(https://www.voyagevirtuel.info/egypt/bigphotos/luxor-karnak-850.jpg);
   position: absolute;
   background-size: cover;
   right: 0;
-  z-index: 1;
+  z-index: -1;
   width: 100%;
   height: 100%;
 }
@@ -68,6 +74,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 100vh;
 }
 
 @media screen and (min-width: 200px) and (max-width: 640px) {
