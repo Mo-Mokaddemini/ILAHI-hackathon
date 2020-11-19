@@ -22,12 +22,18 @@
     position: absolute;
     padding: 10px;
     font-size: 100px;
-    top: 60%;
+    top: 67%;
     font-family: 'Poiret One';
     color: #084db4;
-    text-shadow: #ffee00fd 1px 1px  10px;
+    text-shadow: #ffee00fd 1px 1px  5px;
+    text-decoration: none;
+    transform: scale(1.2);
     /* box-shadow:  #0226f1dc 0px -0px  5px; 
     border-radius: 50px; */
+}
+.buttonjoin:hover {
+    transform: scale(1.3);
+    transition: 0.4s all;
 }
 .backgroundimg{
     z-index: -1;

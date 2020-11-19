@@ -1,11 +1,15 @@
-const { default: homepage } = require("./components/homepage/Homepage");
 import Homepage from './components/homepage/Homepage'
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Homepage />
-    </div>
+        <div className="App">
+          <Switch>
+            <Route path="/" >
+            <Homepage />
+            </Route>
+          </Switch>
+        </div>
   );
 }
 
