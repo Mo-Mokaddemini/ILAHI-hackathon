@@ -8,7 +8,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;;
-    color: var(--primary-color);
+    color: #ffee00fd ;
+    text-shadow: #808080 1px 1px 2px;
 }
 .lifecross{
     position: absolute;
@@ -23,22 +24,31 @@
 .message .form{
     position: absolute;
 }
-.message h1{
+.prayers{
+    font-size: 100px;
     position: absolute;
     margin-bottom: 500px;
 }
-.message .form-group {
+ .form-group {
     display: flex;
     flex-direction: column;
 }
-.message .form-group label {
+.form-group label {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.message .form-group .form-control {
+.form-control {
     width: 400px;
     border-radius: 5px;
 }
+.leavemsg{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poiret One';
+    text-shadow: #ffd700 1px 1px 1px;
+    color: #ffffff;
+}
+
 .message .btn {
     margin-top: 20px;
 }
@@ -46,4 +56,10 @@
     z-index: -1;
     width: 100vW;
     height: 100vh;
+}
+.btn{
+    font-size: 30px;
+    font-family: 'Poiret One';
+    text-shadow: #ffd700 1px 1px 1px;
+    color: #000000;
 }

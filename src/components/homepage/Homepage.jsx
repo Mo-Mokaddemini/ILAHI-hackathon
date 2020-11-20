@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import './Homepage.css';
-import landscape from '../../assets/pyramid2.png';
+import landscape from '../../assets/horus1.png';
 import lifecross from '../../assets/lifecross.png';
 import { Link } from 'react-router-dom';
 
