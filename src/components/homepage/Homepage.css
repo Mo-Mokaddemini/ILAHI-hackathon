@@ -7,17 +7,26 @@
     flex-direction: column;
     align-items: center;
 }
+.lifecross{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+.lifecross:hover{
+    transform: scale(1.2);
+    transition: 0.4s all;
+}
 
-.title{
+.title1{
     position: absolute;
     font-size: 250px;
     padding: 200px;
-    top: -10%;
+    top: 0%;
     font-family: 'Poiret One';
     color: #2875e7;
     text-shadow: #ffee00fd 1px 1px  10px;
 }
-
 .buttonjoin {
     position: absolute;
     padding: 10px;
@@ -39,4 +48,78 @@
     z-index: -1;
     width: 100vW;
     height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .lifecross{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+        margin-left: -25px;
+    }
+    .title1{
+        position: absolute;
+        font-size: 250px;
+        padding: 200px;
+        top: -10%;
+        font-family: 'Poiret One';
+        color: #2875e7;
+        text-shadow: #ffee00fd 1px 1px  10px;
+    }
+    .buttonjoin {
+        position: absolute;
+        padding: 10px;
+        font-size: 60px;
+        top: 67%;
+        font-family: 'Poiret One';
+        color: #084db4;
+        text-shadow: #ffee00fd 1px 1px  5px;
+        text-decoration: none;
+        transform: scale(1.2);
+        /* box-shadow:  #0226f1dc 0px -0px  5px; 
+        border-radius: 50px; */
+    }
+    .backgroundimg{
+        z-index: -1;
+        width: 150%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .lifecross{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        margin-left: -15px;
+    }
+    .title1{
+        position: absolute;
+        font-size: 150px;
+        padding: 200px;
+        top: -10%;
+        font-family: 'Poiret One';
+        color: #2875e7;
+        text-shadow: #ffee00fd 1px 1px  10px;
+    }
+    .buttonjoin {
+        position: absolute;
+        padding: 10px;
+        font-size: 35px;
+        top: 75%;
+        font-family: 'Poiret One';
+        color: #084db4;
+        text-shadow: #ffee00fd 1px 1px  5px;
+        text-decoration: none;
+        transform: scale(1.2);
+        /* box-shadow:  #0226f1dc 0px -0px  5px; 
+        border-radius: 50px; */
+    }
+    .backgroundimg {
+        z-index: -1;
+        width: 200%;
+        height: 100vh;
+    }
 }
