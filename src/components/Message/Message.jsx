@@ -20,38 +20,34 @@ class Message extends Component {
     
       submitTextarea = (res) => {
         res.preventDefault();
+        this.setState({textarea: res.target.value})
        
 
-            if (res.target.value == "") {
+            if (this.state.textarea == "") {
              
               let result = document.querySelector('.answer')
               let answer = document.createElement("h2")
               document.querySelector('h2')
-              answer.innerHTML= "Your message  has been successfully added!";
+              answer.innerHTML= "Please fill out the form";
               result.appendChild(answer);
              
               function answerremove() {
                 answer.remove();
                 }
                 setTimeout(answerremove, 3000);
-                
-               
-              
+
             } else  {
               let result = document.querySelector('.answer')
               let answer = document.createElement("h2")
               document.querySelector('h2')
-              answer.innerHTML= (` there is a probleme`);
+              answer.innerHTML= ("Your message  has been successfully added!");
               result.appendChild(answer);
-
+              this.setState({textarea : ""})
 
               function answerremove() {
                 answer.remove();
                 }
-                setTimeout(answerremove, 3000);
-                
-                
-              
+                setTimeout(answerremove, 3000); 
             }
           }
        
