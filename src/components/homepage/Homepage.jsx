@@ -10,7 +10,7 @@ function Homepage() {
        <Link className="backtohome" to="/"> <img className="lifecross" src={lifecross}></img></Link>
         <img className="backgroundimg" src={landscape} alt="background"></img>
         <div className="homepageContainer">
-          <h1 className="title">ILAHI</h1>
+          <h1 className="title1">ILAHI</h1>
           <Link className="buttonjoin" to="/FunctionCard"> 
            Discover your Gods
           </Link>
