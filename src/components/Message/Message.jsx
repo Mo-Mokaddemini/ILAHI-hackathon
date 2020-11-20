@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import pyramid3 from '../../assets/pyramid3.jpg';
+import pyramid3 from '../../assets/black-stone-bg.jpg';
 import './Message.css';
 import lifecross from '../../assets/lifecross.png';
 import { Link } from 'react-router-dom';
@@ -53,7 +53,7 @@ class Message extends Component {
                 <h1 className="prayers">PRAYERS</h1>
                 <form className='form' onSubmit={this.submitTextarea}>
                     <div className="form-group">
-                        <label for="exampleFormControlSelect1">Choose your divinity</label>
+                        <label className="leavemsg" for="exampleFormControlSelect1">Choose your divinity</label>
                         <select className="form-control" id="exampleFormControlSelect1">
                         <option>Amon</option>
                         <option>Anubis</option>
@@ -70,12 +70,12 @@ class Message extends Component {
                         </select>
                     </div>
                     <div className="form-group">
-                        <label for="exampleFormControlTextarea1">Leave your message</label>
+                        <label className="leavemsg" for="exampleFormControlTextarea1">Leave your message</label>
                         <textarea className="form-control" id="textarea" 
                         name="textarea" rows="6"></textarea>
                     </div>
                     <div class="col-auto">
-                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            <button type="submit"className="btn" class="btn btn-primary mb-2">Submit</button>
                     </div>
                 </form>
             </div>

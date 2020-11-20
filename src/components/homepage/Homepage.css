@@ -20,23 +20,24 @@
 
 .title1{
     position: absolute;
-    font-size: 250px;
+    font-size: 200px;
     padding: 200px;
-    top: 0%;
+    top: -30%;
     font-family: 'Poiret One';
-    color: #2875e7;
-    text-shadow: #ffee00fd 1px 1px  10px;
+    color:#ffee00fd ;
+    text-shadow: black 1px 1px 2px;
 }
 .buttonjoin {
     position: absolute;
     padding: 10px;
-    font-size: 100px;
-    top: 67%;
+    font-size: 70px;
+    top: 75%;
     font-family: 'Poiret One';
-    color: #084db4;
-    text-shadow: #ffee00fd 1px 1px  5px;
+    color: black;
+    text-shadow: #ffee00fd  1px 1px 2px;
     text-decoration: none;
     transform: scale(1.2);
+    font-weight: bold;
     /* box-shadow:  #0226f1dc 0px -0px  5px; 
     border-radius: 50px; */
 }
@@ -64,8 +65,8 @@
         padding: 200px;
         top: -10%;
         font-family: 'Poiret One';
-        color: #2875e7;
-        text-shadow: #ffee00fd 1px 1px  10px;
+        color:#ffee00fd ;
+        text-shadow: black 1px 1px 2px;
     }
     .buttonjoin {
         position: absolute;
@@ -73,8 +74,8 @@
         font-size: 60px;
         top: 67%;
         font-family: 'Poiret One';
-        color: #084db4;
-        text-shadow: #ffee00fd 1px 1px  5px;
+        color: black;
+        text-shadow: #ffee00fd  1px 1px 2px;
         text-decoration: none;
         transform: scale(1.2);
         /* box-shadow:  #0226f1dc 0px -0px  5px; 
@@ -90,8 +91,8 @@
 @media screen and (max-width: 767px) {
     .lifecross{
         position: absolute;
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         padding: 5px;
         margin-left: -15px;
     }
@@ -99,10 +100,10 @@
         position: absolute;
         font-size: 150px;
         padding: 200px;
-        top: -10%;
+        top: 0%;
         font-family: 'Poiret One';
-        color: #2875e7;
-        text-shadow: #ffee00fd 1px 1px  10px;
+        color:#ffee00fd ;
+        text-shadow: black 1px 1px 2px;
     }
     .buttonjoin {
         position: absolute;
@@ -110,8 +111,8 @@
         font-size: 35px;
         top: 75%;
         font-family: 'Poiret One';
-        color: #084db4;
-        text-shadow: #ffee00fd 1px 1px  5px;
+        color: black;
+        text-shadow: #ffee00fd  1px 1px 2px;
         text-decoration: none;
         transform: scale(1.2);
         /* box-shadow:  #0226f1dc 0px -0px  5px; 
