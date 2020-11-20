@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 .message h1 {
     font-family: 'Poiret One';
+    top: 10%;
 }
 .message {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;;
+    text-align: center;
     color: #ffee00fd ;
     text-shadow: #808080 1px 1px 2px;
 }
@@ -38,8 +39,14 @@
     margin-top: 10px;
 }
 .form-control {
-    width: 400px;
+    width: 500px;
     border-radius: 5px;
+    font-family: 'Poiret One' ;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: #ffd700 1px 1px 5px;
+    color: white;
+    background-color: black;
 }
 .leavemsg{
     font-size: 30px;
@@ -62,4 +69,13 @@
     font-family: 'Poiret One';
     text-shadow: #ffd700 1px 1px 1px;
     color: #000000;
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: 1s all;
+}
+.answer {
+    position: absolute;
+    top: 80%;
+    font-family: 'Poiret One';
 }
