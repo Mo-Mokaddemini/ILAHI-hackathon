@@ -5,6 +5,7 @@ import FunctionCard from "./components/Functionality/FunctionCard";
 import Homepage from "./components/homepage/Homepage";
 import Message from "./components/Message/Message";
 import God from './components/card/God';
+import Divinities from './components/divinities/Divinities';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Homepage} />
         <Route exact path="/FunctionCard" component = {FunctionCard}/>
         <Route path="/prayer" component={Message} />
+        <Route path="/divinity" component={Divinities}/>
         <Route path="/amon">
           <God nameGod="Amon"/>
         </Route>
