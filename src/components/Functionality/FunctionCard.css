@@ -15,7 +15,7 @@
   transition: 0.4s all;
 }
 .bg-image-2 {
-  background-image: url(https://www.voyagevirtuel.info/egypt/bigphotos/luxor-karnak-850.jpg);
+  background-image: url('../../assets/pyramid4.jpg');
   position: absolute;
   background-size: cover;
   right: 0;

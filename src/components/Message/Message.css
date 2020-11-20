@@ -23,7 +23,8 @@
 .message .form{
     position: absolute;
 }
-.message h1{
+.prayers{
+    font-size: 100px;
     position: absolute;
     margin-bottom: 500px;
 }
