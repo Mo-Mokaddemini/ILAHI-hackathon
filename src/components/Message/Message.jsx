@@ -12,38 +12,49 @@ class Message extends Component {
         };
       }
     
-      onChange = (e) => {
+      onChange = (res) => {
         this.setState({
-          [e.target.name]: e.target.value
+          [res.target.name]: res.target.value
         });
       };
     
-      submitTextarea = (e) => {
-        e.preventDefault();
-        const config = {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(this.state)
-        };
-        const url = "";
-        fetch(url, config)
-          .then((res) => res.json())
-          .then((res) => {
-            if (res.error) {
-              alert(res.error);
-            } else {
-              alert(`Message #${res} has been successfully added!`);
-            }
-          })
-          .catch((e) => {
-            console.error(e);
-            alert("There was an error when adding the message.");
-          });
-      };
-    
+      submitTextarea = (res) => {
+        res.preventDefault();
+       
 
+            if (res.target.value == "") {
+             
+              let result = document.querySelector('.answer')
+              let answer = document.createElement("h2")
+              document.querySelector('h2')
+              answer.innerHTML= "Your message  has been successfully added!";
+              result.appendChild(answer);
+             
+              function answerremove() {
+                answer.remove();
+                }
+                setTimeout(answerremove, 3000);
+                
+               
+              
+            } else  {
+              let result = document.querySelector('.answer')
+              let answer = document.createElement("h2")
+              document.querySelector('h2')
+              answer.innerHTML= (` there is a probleme`);
+              result.appendChild(answer);
+
+
+              function answerremove() {
+                answer.remove();
+                }
+                setTimeout(answerremove, 3000);
+                
+                
+              
+            }
+          }
+       
   render() {
       return (
         <div className="mescontainer">
@@ -72,12 +83,14 @@ class Message extends Component {
                     <div className="form-group">
                         <label className="leavemsg" for="exampleFormControlTextarea1">Leave your message</label>
                         <textarea className="form-control" id="textarea" 
-                        name="textarea" rows="6"></textarea>
+                        name="textarea" rows="6" placeholder="Enter your prayer here"></textarea>
                     </div>
                     <div class="col-auto">
                             <button type="submit"className="btn" class="btn btn-primary mb-2">Submit</button>
+                           
                     </div>
                 </form>
+                <div className="answer"></div>
             </div>
           </div>
         )
